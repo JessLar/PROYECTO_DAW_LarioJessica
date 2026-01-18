@@ -1,0 +1,8 @@
+com.proyecto.horas
+com.proyecto.horas.configuraciones
+com.proyecto.horas.controlador
+com.proyecto.horas.excepciones
+com.proyecto.horas.modelo
+com.proyecto.horas.repositorio
+com.proyecto.horas.servicio
+com.proyecto.horas.servicio.impl
