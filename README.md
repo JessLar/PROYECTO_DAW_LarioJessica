@@ -55,13 +55,13 @@ Documentación generada automáticamente con JavaDoc.
 ## 4. Cómo ejecutar el proyecto
 
 ### Backend
-cd proyecto-horas-backend
-mvn spring-boot:run
+* cd proyecto-horas-backend
+* mvn spring-boot:run
 
 ### Frontend
-cd proyecto-horas-frontend
-npm install (solo la primera vez)
-ng serve
+* cd proyecto-horas-frontend
+* npm install (solo la primera vez)
+* ng serve
 
 ## 5. Pruebas
 
