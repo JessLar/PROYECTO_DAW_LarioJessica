@@ -69,7 +69,8 @@ ng serve
 ## Tests unitarios 
 Los tests del backend están ubicados en: 
 * Ruta relativa desde el repositorio --> /proyecto-horas-backend/src/test/java/com/proyecto/horas
-* URL completa --> https://github.com/JessLar/PROYECTO_DAW_LarioJessica/tree/d49c97deeef0e18655d241a330ed547d88a6c972/proyecto-horas-backend/src/test/java/com/proyecto/horas mejor asi
+* URL completa --> https://github.com/JessLar/PROYECTO_DAW_LarioJessica/tree/d49c97deeef0e18655d241a330ed547d88a6c972/proyecto-horas-backend/src/test/java/com/proyecto/horas
+  
 Son pruebas de caja blanca que validan la lógica interna del backend.
 
 
