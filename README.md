@@ -21,6 +21,7 @@ El sistema está compuesto por un backend desarrollado en Spring Boot y un front
 
 ## 2. Estructura del repositorio
 
+```
 /proyecto-horas-backend
     ├── src/main/java
     ├── src/main/resources
@@ -32,6 +33,8 @@ El sistema está compuesto por un backend desarrollado en Spring Boot y un front
     ├── src/assets
     ├── angular.json
     └── package.json
+```
+
 
     
 ## 3. Documentación técnica
