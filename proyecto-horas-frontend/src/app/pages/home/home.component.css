@@ -1,0 +1,80 @@
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    overflow: hidden;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.bootstrap-wrapper {
+    background-color: #ed9316;
+    color: #ffffff;
+    padding: 50px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; 
+    animation: fadeIn 2s ease-in-out;
+}
+
+.title {
+    white-space: nowrap;
+    margin-bottom: 30px;
+    font-size: 3em;
+    font-family: 'Montserrat', sans-serif;
+    animation: fadeIn 2s ease-in-out;
+}
+
+button[mat-raised-button] {
+    background-color: #1613cc; 
+    color:white ;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1.2em;
+    font-family: 'Montserrat', sans-serif;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+    border-radius: 10px;
+}
+
+button[mat-raised-button]:hover {
+    background-color: white; 
+    color: #1613cc;
+    transform: scale(1.05);
+
+  
+}
+
+.container {
+    text-align: center;
+}
+.button-container {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+  }
+  
+  button {
+    width: 28%; /* Ajustar el ancho de los botones */
+    height: 28%;
+    border-radius: 10px; /* Bordes redondeados */
+    background-color: white; /* Azul */
+    color: #1613cc; /* Letras blancas */
+  }
+  
+  button:hover {
+    background-color: #1565c0; /* Azul más oscuro al pasar el cursor */
+    color: white; /* Letras blancas */
+  }
+
+

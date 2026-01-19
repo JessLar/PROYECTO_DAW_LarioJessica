@@ -1,0 +1,28 @@
+<div class="login-wrapper">
+  <div class="login-container">
+    <mat-card>
+      <div class="login-form">
+        <form (ngSubmit)="formSubmit()">
+          <div class="input-container">
+            <mat-icon>person</mat-icon>
+            <mat-form-field appearance="outline">
+              <mat-label>Usuario</mat-label>
+              <input matInput [(ngModel)]="loginData.username" name="username" required>
+            </mat-form-field>
+          </div>
+          <div class="input-container">
+            <mat-icon>lock</mat-icon>
+            <mat-form-field appearance="outline">
+              <mat-label>Contraseña</mat-label>
+              <input matInput [(ngModel)]="loginData.password" name="password" required type="password">
+            </mat-form-field>
+          </div>
+          <div class="button-container">
+            <button mat-raised-button color="primary" type="submit">ENTRAR</button>
+            <button mat-raised-button color="accent" type="reset" class="clear-button">LIMPIAR</button>
+          </div>
+        </form>
+      </div>
+    </mat-card>
+  </div>
+</div>

@@ -1,0 +1,67 @@
+<div class="proyectos-container">
+    <div class="proyectos-list">
+      <h1>Proyectos</h1>
+      <button mat-raised-button color="primary" (click)="mostrarFormulario('add')" class="add-button">Añadir Proyecto</button>
+      <table mat-table [dataSource]="proyectos" class="mat-elevation-z8">
+        <ng-container matColumnDef="idProyecto">
+          <th mat-header-cell *matHeaderCellDef> CÓDIGO </th>
+          <td mat-cell *matCellDef="let proyecto"> {{ proyecto.idProyecto }} </td>
+        </ng-container>
+        <ng-container matColumnDef="nombreProyecto">
+          <th mat-header-cell *matHeaderCellDef> NOMBRE </th>
+          <td mat-cell *matCellDef="let proyecto"> {{ proyecto.nombreProyecto }} </td>
+        </ng-container>
+        <ng-container matColumnDef="acciones" class="Acciones">
+          <th mat-header-cell *matHeaderCellDef class="acciones"> ACCIONES </th>
+          <td mat-cell *matCellDef="let proyecto">
+            <div class="icon-container">
+            <button mat-icon-button (click)="verDetalles(proyecto)">
+              <mat-icon>visibility</mat-icon>
+            </button>
+            <span>Ver detalles</span>
+            </div>
+            <div class="icon-container">
+            <button mat-icon-button (click)="mostrarFormulario('editar', proyecto)">
+              <mat-icon>edit</mat-icon>
+            </button>
+            <span>Editar</span>
+          </div>
+            <div class="icon-container">
+            <button mat-icon-button (click)="eliminarProyecto(proyecto.idProyecto)">
+              <mat-icon>delete</mat-icon>
+            </button>
+            <span>Borrar</span>
+          </div>
+          </td>
+        </ng-container>
+        <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+        <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
+      </table>
+    </div>
+  
+    <div *ngIf="formularioVisible" class="proyecto-form">
+      <mat-card>
+        <mat-card-content>
+          <form [formGroup]="proyectoForm" (ngSubmit)="submitForm()">
+            <mat-form-field>
+              <mat-label>Código</mat-label>
+              <input matInput formControlName="idProyecto" [readonly]="accion === 'verDetalles'" required>
+            </mat-form-field>
+            <mat-form-field>
+              <mat-label>Nombre</mat-label>
+              <input matInput formControlName="nombreProyecto" [readonly]="accion === 'verDetalles'" required>
+            </mat-form-field>
+            <mat-form-field>
+              <mat-label>Descripción</mat-label>
+              <textarea matInput formControlName="descripcionProyecto" [readonly]="accion === 'verDetalles'" required></textarea>
+            </mat-form-field>
+            <div class="form-buttons">
+              <button mat-raised-button color="primary" type="submit" *ngIf="accion !== 'verDetalles'">Enviar</button>
+              <button mat-button (click)="cancelar()">Cancelar</button>
+            </div>
+          </form>
+        </mat-card-content>
+      </mat-card>
+    </div>
+  </div>
+  

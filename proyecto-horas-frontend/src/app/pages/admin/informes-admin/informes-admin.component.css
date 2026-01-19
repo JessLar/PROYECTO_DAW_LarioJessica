@@ -1,0 +1,157 @@
+.informes-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  background-color: #ed9316;
+  color: white;
+}
+
+.form-container, .informes-list {
+  background: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  margin: 10px;
+  width: 80%;
+}
+
+.form-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.button-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+button {
+  width: 120px;
+  border-radius: 10px;
+  margin-left: 80px;
+}
+
+h2 {
+  color: #1613cc;
+  align-self: flex-start;
+}
+
+button[color="primary"] {
+  background-color: #1613cc !important;
+  color: white!important;
+}
+
+button[color="primary"]:hover {
+  background-color: #ed9316 !important;
+  color: #1613cc !important;
+}
+
+.clear-button {
+  background-color: #e53935 !important;
+  color: white !important;
+}
+
+.clear-button:hover {
+  background-color: #b71c1c !important;
+  color: white !important;
+}
+
+.mat-header-cell, .mat-cell {
+  background-color: #1613cc;
+}
+
+table {
+  width: 100%;
+}
+th {
+  background-color: #f0f0f0;
+  color: #ed9316;
+  text-align: center;
+  padding: 10px;
+  font-weight: bold;
+}
+td {
+  padding: 10px;
+  text-align: center;
+}
+
+.mat-card-title, .mat-card-subtitle, h3 {
+  color: #1613cc;
+}
+
+mat-form-field {
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+.table-container {
+  width: 100%;
+}
+
+.total-horas {
+  margin-top: 20px;
+  font-size: 1.2em;
+  color: #1613cc;
+  text-align: right;
+  margin-right: 50px;
+}
+
+.mat-footer-row {
+  font-weight: bold;
+}
+
+:host ::ng-deep .mat-mdc-form-field .mdc-floating-label {
+  color: #ed9316 !important;
+}
+
+:host ::ng-deep .mat-mdc-select-arrow {
+  color: #ed9316 !important;
+}
+
+:host ::ng-deep .mat-mdc-select-trigger {
+  color: #ed9316 !important;
+  font-weight: 600;
+}
+
+:host ::ng-deep .mat-mdc-select-value-text {
+  color: #ed9316 !important;
+}
+
+:host ::ng-deep .mat-mdc-option .mdc-list-item__primary-text {
+  color: #ed9316 !important;
+}
+
+/* Borde del outline en naranja */
+:host ::ng-deep .mat-mdc-form-field .mdc-notched-outline__leading,
+:host ::ng-deep .mat-mdc-form-field .mdc-notched-outline__notch,
+:host ::ng-deep .mat-mdc-form-field .mdc-notched-outline__trailing {
+  border-color: #ed9316 !important;
+}
+
+/* Borde más marcado cuando está enfocado */
+:host ::ng-deep .mat-mdc-form-field.mat-focused .mdc-notched-outline__leading,
+:host ::ng-deep .mat-mdc-form-field.mat-focused .mdc-notched-outline__notch,
+:host ::ng-deep .mat-mdc-form-field.mat-focused .mdc-notched-outline__trailing {
+  border-color: #ed9316 !important;
+}
+
+:host ::ng-deep .mat-mdc-select-panel {
+  background-color: white !important;
+  border: 1px solid #1613cc !important;
+}
+
+:host ::ng-deep .mat-mdc-option {
+  color: #1613cc !important;
+}
+
+:host ::ng-deep .mat-mdc-option .mdc-list-item__primary-text {
+  color: #1613cc !important;
+}
+
+:host ::ng-deep .mat-mdc-option:hover {
+  background-color: #e0e0f8 !important;
+  color: #1613cc !important;
+}

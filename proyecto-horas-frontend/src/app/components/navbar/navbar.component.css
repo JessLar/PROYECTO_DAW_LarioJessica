@@ -1,0 +1,92 @@
+.example-container {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.example-sidenav {
+  width: 250px;
+}
+
+.mat-drawer-content {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.custom-toolbar {
+  background-color: white;
+  color: #1613cc !important;
+  height: 70px;
+  font-size: 15px;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.example-icon {
+  font-size: 20px;
+  font-style: italic;
+  color: #1613cc !important;
+}
+
+.custom-toolbar a,
+.custom-toolbar span {
+  color: #ed9316
+}
+
+.example-spacer {
+  flex: 1 1 auto;
+}
+
+.title {
+  color: blueviolet;
+  margin-left: 5px;
+  font-size: 30px;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+.profile-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  padding: 4px 12px;
+  border-radius: 20px;
+  background-color: #fff;
+  color: #333;
+  max-height: 40px;
+  overflow: hidden;
+}
+
+.user-info {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 12px;
+  padding-right: 16px;
+  max-height: 48px;
+}
+
+.avatar {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  object-fit: cover;
+  box-shadow: 0 0 2px rgba(0,0,0,0.3);
+}
+
+.username {
+  font-weight: 500;
+  font-size: 14px;
+  color: #f57c00; /* naranja suave */
+  white-space: nowrap;
+}
+
+.logout {
+  font-size: 14px;
+  color: #1976d2; /* azul Material */
+  cursor: pointer;
+  text-decoration: none;
+}
+.logout:hover {
+  text-decoration: underline;
+}
+

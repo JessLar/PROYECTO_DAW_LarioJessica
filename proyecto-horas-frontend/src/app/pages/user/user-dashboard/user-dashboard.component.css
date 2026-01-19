@@ -1,0 +1,42 @@
+.dashboard-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background-color: #ed9316;
+}
+
+.dashboard-content {
+  background: #fff;
+  padding: 80px;
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  width: 400px;
+  align-items: center;
+}
+
+button {
+  width: 80%;
+  margin: 10px;
+  border-radius: 10px;
+  background-color: #ed9316;
+  color: white;
+}
+
+button:hover {
+  background-color: #ed9316;
+  color: white;
+}
+
+.clear-button {
+  background-color: #e53935;
+  color: white;
+}
+
+.clear-button:hover {
+  background-color: #b71c1c;
+  color: white;
+}

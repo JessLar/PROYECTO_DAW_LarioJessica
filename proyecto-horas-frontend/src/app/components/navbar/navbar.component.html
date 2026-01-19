@@ -1,0 +1,35 @@
+<mat-toolbar color="primary" class="custom-toolbar">
+  <button mat-icon-button *ngIf="isLoggedIn" (click)="drawer.toggle()">
+    <mat-icon>menu</mat-icon>
+  </button>
+  <span class="title">TimeManager</span>
+  <span class="example-spacer"></span>
+  <a *ngIf="!isLoggedIn" [routerLink]="'/login'" mat-button class="example-icon favorite-icon" aria-label="Example icon-button with heart icon">
+    Entrar
+  </a>
+<div class="user-info" *ngIf="isLoggedIn && user">
+  <img [src]="'http://localhost:8080/images/' + user.imagenPerfil" class="avatar">
+  <span class="username">{{ user.username }}</span>
+  <a (click)="logout()" class="logout">Cerrar sesión</a>
+</div>
+
+</mat-toolbar>
+
+<mat-drawer-container class="example-container" autosize>
+  <mat-drawer #drawer class="example-sidenav" mode="side" opened="false">
+    <mat-nav-list>
+      <ng-container *ngIf="isLoggedIn && userRole === 'NORMAL'">
+        <a mat-list-item [routerLink]="'/registro-horas'" (click)="drawer.close()">Registro de horas</a>
+        <a mat-list-item [routerLink]="'/informes'" (click)="drawer.close()">Informes</a>
+      </ng-container>
+      <ng-container *ngIf="isLoggedIn && userRole === 'ADMIN'">
+        <a mat-list-item [routerLink]="'/usuarios'" (click)="drawer.close()">Usuarios</a>
+        <a mat-list-item [routerLink]="'/proyectos'" (click)="drawer.close()">Proyectos</a>
+        <a mat-list-item [routerLink]="'/informes-admin'" (click)="drawer.close()">Informes</a>
+      </ng-container>
+    </mat-nav-list>
+  </mat-drawer>
+  <mat-drawer-content>
+    <router-outlet></router-outlet>
+  </mat-drawer-content>
+</mat-drawer-container>
